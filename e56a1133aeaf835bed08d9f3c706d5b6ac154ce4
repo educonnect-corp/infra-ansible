@@ -1,0 +1,1 @@
+infra-note: files01.educonnect-corp.local — partage Samba //files01/it-backups (credentials dans Pastebin mars 2024). Convention hostnames: [service][NN].educonnect-corp.local. Acces jump host: root@10.21.0.1 (cle SSH sur files01 share).
