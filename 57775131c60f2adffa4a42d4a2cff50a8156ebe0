@@ -1,0 +1,1 @@
+migration-note: dev01 conserve double NIC durant transition (172.21.0.20 + 10.21.0.20). Jenkins accessible sur les deux adresses pendant periode de grace. TODO: couper 172.x access apres validation QA (t.leblanc)
