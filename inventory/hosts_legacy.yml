@@ -1,0 +1,33 @@
+# Ancien inventaire — réseau 172.x (avant migration mars 2024)
+# Conservé pour référence et rollback d'urgence
+all:
+  children:
+    dmz:
+      hosts:
+        web01:
+          ansible_host: 172.20.0.10
+          ansible_user: deploy
+        mail01:
+          ansible_host: 172.20.0.20
+          ansible_user: deploy
+    lan:
+      hosts:
+        dev01:
+          ansible_host: 172.21.0.20
+          ansible_user: jenkins
+          jenkins_port: 8080
+        files01:
+          ansible_host: 172.21.0.30
+          ansible_user: samba
+          samba_share: //172.21.0.30/it-backups
+    core:
+      hosts:
+        db01:
+          ansible_host: 172.23.0.10
+          ansible_user: mongodb
+          # MongoDB sans auth (dev only) — ticket #89 ouvert depuis 6 mois
+          mongo_auth: false
+          redis_auth: false
+        root01:
+          ansible_host: 172.23.0.1
+          ansible_user: root
