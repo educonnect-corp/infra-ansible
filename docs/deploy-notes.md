@@ -4,7 +4,7 @@
 
 Les logs de déploiement de la pipeline CI sont archivés mensuellement.
 
-Archive mars 2024 (migration réseau 172.x → 10.x) : https://pastebin.com/QzrLGbmq
+Archive mars 2024 (migration réseau 172.x → 10.x) : accès restreint — migré vers système d'archivage interne
 
 ## Procédure de rollback
 
